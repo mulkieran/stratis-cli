@@ -1,0 +1,2 @@
+git checkout master
+git pull https://github.com/stratis-storage/stratisd master

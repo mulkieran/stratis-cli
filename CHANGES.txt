@@ -6,6 +6,9 @@ Python linter: pylint (2.3.1)
 Python auto-formatter: black (19.3b0)
 Python import sorter: isort (4.3.4)
 
+New minimum dependency requirement:
+  - justbytes: 0.14
+
 
 - Add support for encryption:
   https://github.com/stratis-storage/stratis-cli/issues/509
@@ -93,6 +96,7 @@ Python import sorter: isort (4.3.4)
   https://github.com/stratis-storage/stratis-cli/pull/455
 
 - Tidies and Maintenance:
+  https://github.com/stratis-storage/stratis-cli/pull/600
   https://github.com/stratis-storage/stratis-cli/pull/590
   https://github.com/stratis-storage/stratis-cli/pull/589
   https://github.com/stratis-storage/stratis-cli/pull/588
