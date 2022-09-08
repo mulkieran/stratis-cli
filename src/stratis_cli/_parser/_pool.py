@@ -303,9 +303,9 @@ POOL_SUBCMDS = [
                         default=[],
                         help=(
                             "UUID of device to use; may be specified multiple "
-                            "times. If no devices specified then all devices "
-                            "belonging to the pool that appear to be have been "
-                            "expanded will be used."
+                            "times. If no devices are specified then all "
+                            "devices belonging to the pool that appear to have "
+                            "increased in size will be used."
                         ),
                     ),
                 ),
