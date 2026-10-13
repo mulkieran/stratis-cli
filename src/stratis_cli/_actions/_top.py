@@ -24,6 +24,7 @@ from typing import Tuple
 from dbus import Array, Dictionary, String, Struct, UInt16
 from dbus.proxies import ProxyObject
 
+from .._alerts import PoolAlert
 from .._errors import (
     StratisCliEngineError,
     StratisCliIncoherenceError,
@@ -270,3 +271,11 @@ class TopActions:
         print_table(
             ("Key Description",), sorted(key_list, key=lambda entry: entry[0]), ("<",)
         )
+
+    @staticmethod
+    def list_alerts(_: Namespace):
+        """
+        List all alerts that this tool can report.
+        """
+        for code in PoolAlert.CODE_MAP.values():
+            print(f"{code}: {code.explain()}")

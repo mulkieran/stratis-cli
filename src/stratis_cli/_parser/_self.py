@@ -15,4 +15,14 @@
 Self command parser for Stratis CLI.
 """
 
-SELF_SUBCMDS = []
+from .._actions import TopActions
+
+SELF_SUBCMDS = [
+    (
+        "alerts",
+        {
+            "help": "Describe all alerts that this program reports",
+            "func": TopActions.list_alerts,
+        },
+    )
+]
