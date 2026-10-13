@@ -33,6 +33,7 @@ from ._key import KEY_SUBCMDS
 from ._logical import LOGICAL_SUBCMDS
 from ._physical import PHYSICAL_SUBCMDS
 from ._pool import POOL_SUBCMDS
+from ._self import SELF_SUBCMDS
 
 
 def gen_subparsers(parser, command_line):
@@ -227,6 +228,7 @@ ROOT_SUBCOMMANDS = [
         {"help": "Commands for debugging operations.", "subcmds": TOP_DEBUG_SUBCMDS},
     ),
     ("daemon", {"help": "Stratis daemon information", "subcmds": DAEMON_SUBCMDS}),
+    ("self", {"help": "Information about this program", "subcmds": SELF_SUBCMDS}),
 ]
 
 GEN_ARGS = [
